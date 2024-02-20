@@ -12,7 +12,7 @@ function makeBox() {
     "," +
     Math.floor(Math.random() * 256) +
     ")";
-  var time = Math.random() * 5000;
+  var time = Math.random() * 2500;
   var windowHeight = window.innerHeight;
   var windowWidth = window.innerWidth;
   var top = Math.random() * (windowHeight - 400) + 100;
