@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/style/style.css">
-    <link rel="shortcut icon" href="./public/img/rxn-game-2.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reaction Game</title>
-</head>
-<body>
-    <header>
-        <h1 class="score"></h1>
-    </header>
-
-    <div class="banner">
-        <p class="info"></p>
-        <button class="restart">Restart</button>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="instructions">
+      <h1>Test your reactions</h1>
+      <p>
+        Click on the random shape as quickly as possible. Try to beat your
+        highscore!
+      </p>
+    </div>
+    <div class="scoreBoard">
+      <p>Your High Score: <span id="highScore">0</span>s</p>
+      <p>Your time: <span id="time">0</span>s</p>
     </div>
 
-    <div class="game_container">
-        <button class="box" title="0"></button>
-        <button class="box" title="1"></button>
-        <button class="box" title="2"></button>
-        <button class="box" title="3"></button>
-        <button class="box" title="4"></button>
-        <button class="box" title="5"></button>
-        <button class="box" title="6"></button>
-        <button class="box" title="7"></button>
-        <button class="box" title="8"></button>
-        <button class="box" title="9"></button>
-        <button class="box" title="10"><buttonv>
-        <button class="box" title="11"><buttonv>
-        <button class="box" title="12"><buttonv>
-        <button class="box" title="13"><buttonv>
-        <button class="box" title="14"><buttonv>
-        <button class="box" title="15"><buttonv>
-    </div>
+    <div id="box"></div>
 
-    <center>
-        <hr>
-    </center>
-
-
-
-<script src="./public/js/app.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
